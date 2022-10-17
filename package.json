@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "scrape": "ts-node ./get5LetterWords.ts",
     "words": "ts-node ./getPossibleWords.ts"
   },

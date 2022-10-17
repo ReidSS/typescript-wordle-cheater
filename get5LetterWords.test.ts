@@ -11,3 +11,9 @@ test('produce whole alphabet', () => {
         'y', 'z'
       ]);
 });
+
+test('getData include aahed when using a as input', () => {
+  return get5LetterWords.getData('a').then(data => {
+    expect(data).toContain('aahed');
+  });
+});

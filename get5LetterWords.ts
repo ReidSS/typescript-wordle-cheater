@@ -14,8 +14,6 @@ function saveData(filename: string, data: any) {
   }
 
 function fetchPage(url: string): Promise<string | undefined> {
-  console.log("url: ", url);
-  console.log('type', typeof(url));
   const HTMLData = axios
     .get(url)
     .then(res => res.data)
@@ -105,7 +103,7 @@ async function constructWholeList() {
     });
 }
 
-module.exports = { produceAlphabet};
+module.exports = { saveData, fetchPage, fetchFromWebOrCache, extractData, produceAlphabet, getData, constructWholeList};
 
 // uncomment below to get whole list of 5 letter words.
 

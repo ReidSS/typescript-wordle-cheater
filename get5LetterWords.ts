@@ -46,7 +46,6 @@ async function fetchFromWebOrCache(url: string, ignoreCache = false) {
   } else {
     console.log(`I fetched ${url} fresh`);
     const HTMLData = await fetchPage(url);
-    //console.log(HTMLData);
     if (!ignoreCache && HTMLData) {
       writeFile(
         resolve(

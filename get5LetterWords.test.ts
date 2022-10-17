@@ -1,5 +1,3 @@
-import { type } from "os";
-
 const get5LetterWords = require('./get5LetterWords');
 
 test('produce whole alphabet', () => {
